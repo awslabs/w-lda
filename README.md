@@ -20,6 +20,7 @@ This will download the dataset and store the pre-processed data under `SOURCE_DI
 * from `SOURCE_DIR`, run `./examples/gpu0.sh`
 
 The result is saved under `SOURCE_DIR/examples/results`. In particular, the top words of the topics are saved under `eval_record.p` under the keys `Top Words` and `Top Words2`.
+`Top Words2` are top words based on ranking the decoder matrix weights; `Top Words` are the top words based on the decoder output for each topic (the corresponding column of the decoder matrix plus the offset). 
 Note that in order to evaluate NPMI scores, a separate server process needs to run `npmi_calc.py`, which would require the
 dictionary and inverted index files for the Wikipedia corpus. We do not currently provide these files so the NPMIs are set to 0's. 
 However, readers can refer to other open source packages such as [this](https://github.com/kapadias/mediumposts/blob/master/nlp/published_notebooks/Evaluate%20Topic%20Models.ipynb) for evaluation.
