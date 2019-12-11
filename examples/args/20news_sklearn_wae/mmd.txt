@@ -1,0 +1,21 @@
+-dom twenty_news_sklearn
+-desc 20news_doc_clf
+-mod dirichlet
+-ndim_x 1995
+-opt Adam
+-e_nh 100 100
+-e_nl -1
+-e_nonlin softrelu
+-d_nh 1995
+-d_nl -1
+-dis_nh 50 50
+-dis_nl -1
+-verb True
+-eval_stats_every 10
+-adverse True
+-update_enc True
+-ndim_y 50
+-train_mode mmd
+-bs 100
+-lr 0.002
+-kernel_alpha 1

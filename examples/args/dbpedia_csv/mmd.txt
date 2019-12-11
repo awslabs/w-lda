@@ -1,0 +1,21 @@
+-dom dbpedia_csv
+-desc dbpedia
+-mod dirichlet
+-ndim_x 10248
+-opt Adam
+-e_nh 100 100
+-e_nl -1
+-e_nonlin softrelu
+-d_nh 10248
+-d_nl -1
+-dis_nh 50 50
+-dis_nl -1
+-verb True
+-eval_stats_every 10
+-adverse True
+-update_enc True
+-train_mode mmd
+-ndim_y 50
+-bs 200
+-lr 0.002
+-kernel_alpha 1

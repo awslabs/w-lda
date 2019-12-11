@@ -1,0 +1,21 @@
+-dom lda_synthetic
+-desc lda_synthetic_test
+-mod dirichlet
+-ndim_x 100
+-opt Adam
+-e_nh 10 10
+-e_nl -1
+-e_nonlin softrelu
+-d_nh 100
+-d_nl -1
+-dis_nh 10 10
+-dis_nl -1
+-verb True
+-eval_stats_every 10
+-adverse True
+-update_enc True
+-train_mode mmd
+-ndim_y 5
+-bs 100
+-lr 0.002
+-kernel_alpha 1
